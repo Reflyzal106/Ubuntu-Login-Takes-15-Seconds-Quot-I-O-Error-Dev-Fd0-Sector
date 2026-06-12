@@ -10,7 +10,7 @@
 ---
 
 ### 🔍 Quick Technical Overview & Summary:
-Disable floppy drive support by adding the following line to /etc/fstab: 'fd0 none sysfs user,noatime 0 0' and then run "sudo update-grub" and "sudo reboot".
+Disable the floppy drive by adding the following command to your grub configuration file: sudo nano /boot/grub/grub.cfg, then add the line 'set root=hd0,0' (assuming you have a single hard drive), and save and exit. Reboot your system.
 
 ---
 
